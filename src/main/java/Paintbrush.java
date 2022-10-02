@@ -45,7 +45,7 @@ public class Paintbrush {
         
         g.setColor(Color.GREEN);
         int vectorX2 [] = {153, 128, 180};
-        int vectorY2 [] = {32, 67, 72};
+        int vectorY2 [] = {32, 67, 80};
         g.fillPolygon(vectorX2, vectorY2, 3);
     }
 
