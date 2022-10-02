@@ -18,14 +18,10 @@ public class MyCanvas extends JPanel{
    @Override
     protected void paintComponent(Graphics g){
         super.paintComponent(g);
-        //make sky
-        
-        g.setColor(new Color (127,233,245));
-        g.fillRect(0,0, 400, 100);
-        //make sun
-
-        g.setColor(Color.YELLOW);
-        g.fillOval(60, 60, 30, 30);
+        Paintbrush paintbrush= new Paintbrush(g);
+        paintbrush.drawSky();
+        paintbrush.drawMountains();
+        paintbrush.drawTree();
     }
 
 }
